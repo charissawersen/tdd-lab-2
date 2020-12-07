@@ -45,5 +45,16 @@ describe('translate', function ()
 
 // 4. At least one test for words starting with three consonants. 
 
-
+describe('translate', function ()
+{
+    it('word starting with thre constanant', function ()
+    {
+        expect(translate('stripe')).toEqual('ipestray')
+    })
+});
 // 5. At least one test checking for lower case conversion. 
+describe('translate', function(){
+    it('lowercase conversion', function (){
+        expect(translate('CRAZY')).toEqual('azycray')
+    })
+});

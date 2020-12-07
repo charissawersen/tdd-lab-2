@@ -3,6 +3,8 @@ let newWord = "";
 
 function translate(str)
 {
+    str = str.toLowerCase(); 
+    console.log(str);
     if (vowels.indexOf(str[0]) > -1)
     {
         newWord = str + 'way';
@@ -10,12 +12,12 @@ function translate(str)
     
 } else {
     let matchVowels = str.match(/['a', 'e', 'i', 'o', 'u']/g) || 0; 
-    //console.log(matchVowels);
+    console.log(matchVowels);
     let firstVowel = str.indexOf(matchVowels[0]);
-    //console.log(firstVowel);
+    console.log(firstVowel);
     newWord = str.substring(firstVowel) + str.substring(0, firstVowel) + 'ay';
-    //console.log(newWord);
-    
+    console.log(newWord);
+    // let lower = newWord.toLowerCase(); 
     // str.substring(firstVowel) + str.substring(0, firstVowel) + 'ay';
     return newWord;
 }}
