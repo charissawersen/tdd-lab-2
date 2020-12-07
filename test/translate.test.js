@@ -55,6 +55,12 @@ describe('translate', function ()
 // 5. At least one test checking for lower case conversion. 
 describe('translate', function(){
     it('lowercase conversion', function (){
-        expect(translate('CRAZY')).toEqual('azycray')
+        expect(translate('raZOR')).toEqual('azorray')
     })
 });
+// 6. Word starting with y treated as a constanant. 
+describe('translate', function(){
+    it('word starting y', function() {
+        expect(translate('youngster')).toEqual('oungsteryay')
+    })
+})

@@ -21,4 +21,4 @@ function translate(str)
     // str.substring(firstVowel) + str.substring(0, firstVowel) + 'ay';
     return newWord;
 }}
-//console.log(translate('scared'));
+// console.log(translate('scared'));
